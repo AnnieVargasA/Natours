@@ -18,26 +18,21 @@ html{
   font-size: 62.5%;
 }
 
-body{
+body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-  padding:3rem;
-  box-sizing: border-box;
+  color: #777777;
+  padding: 30px; 
 }
-.header{
+
+.header {
   height: 95vh;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(126,213,111,0.8),
-    rgba(40,180,131,0.8)),
-  url(https://res.cloudinary.com/dzgncebhe/image/upload/v1585606217/Natours/hero_akhnoq.jpg
-  );
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(https://res.cloudinary.com/dzgncebhe/image/upload/v1585606217/Natours/hero_akhnoq.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   /* 
     We can check some examples about "clip-path"on: 
     => bennettfeely.com/clippy  
@@ -55,11 +50,11 @@ body{
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
-.heading-primary{
-  color:white;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.heading-primary {
+  color: #FFFFFF;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -85,10 +80,10 @@ body{
   font-weight: 700;
   letter-spacing: 1.74rem;
   animation-name: moveInRight;
-  animation-duration: 1.5s;
-}
-@keyframes moveInLeft{
-  0%{
+  animation-duration: 1.5s; }
+
+@keyframes moveInLeft {
+  0% {
     opacity: 0;
     transform: translateX(-10rem);
 }
@@ -97,11 +92,10 @@ body{
 }
   100%{
     opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes moveInRight{
-  0%{
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
     opacity: 0;
     transform: translateX(10rem);
 }
@@ -110,18 +104,15 @@ body{
 }
   100%{
     opacity: 1;
-    transform: translate(100);
-  }
-}
-@keyframes moveInBottom{
-  0%{
+    transform: translate(100); } }
+
+@keyframes moveInBottom {
+  0% {
     opacity: 0;
     transform: translateY(3rem);}
   100%{
     opacity: 1;
-    transform: translate(0);
-}
-}
+    transform: translate(0); } }
 
 /*
   A Pseudo class is special state of the selector.
@@ -129,7 +120,7 @@ body{
 
 */
 .btn:link,
-.btn:visited{
+.btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -172,5 +163,4 @@ body{
 }
 .btn--animated{
   animation: moveInBottom .75s ease-out;
-  animation-fill-mode: backwards;
-}
+  animation-fill-mode: backwards; }
