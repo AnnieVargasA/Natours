@@ -1,7 +1,30 @@
-@mixin clearFix{
-  &::after{
+@mixin clearFix {
+  &::after {
     content: "";
     display: table;
     clear: both;
   }
+}
+
+@mixin blueGradient {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-secondary-lightBlue,
+    $color-secondary-darkBlue
+  );
+}
+
+@mixin orangeGradient {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-secondary-lightOrange,
+    $color-secondary-darkOrange
+  );
+}
+@mixin primaryGradient {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
 }
