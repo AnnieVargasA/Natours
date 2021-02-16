@@ -339,7 +339,7 @@ body {
   width: 75%;
   margin: 8rem auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   padding-left: 9rem;
@@ -364,8 +364,8 @@ body {
     -webkit-transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    transition: all .8s;
-    -webkit-transition: all .8s; }
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s; }
   .story__text {
     transform: skewX(12deg);
     -webkit-transform: skewX(12deg); }
@@ -380,8 +380,8 @@ body {
     font-size: 1.7rem;
     text-align: center;
     opacity: 0;
-    transition: all .8s;
-    -webkit-transition: all .8s;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden; }
   .story:hover .story__caption {
@@ -393,6 +393,61 @@ body {
     -webkit-transform: translateX(-4rem) scale(1);
     filter: blur(0.3rem) brightness(80%);
     -webkit-filter: blur(0.3rem) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .20;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: .2rem;
+  -webkit-border-radius: .2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: .3rem solid transparent;
+  transition: all .3s;
+  -webkit-transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 0.3rem solid #55c57a; }
+  .form__input:focus:invalid {
+    border-bottom: 0.3rem solid #FF7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999999; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s;
+  -webkit-transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+  -webkit-transform: translateY(-4rem); }
 
 .header {
   height: 95vh;
@@ -460,15 +515,31 @@ body {
   background-size: cover;
   height: 55rem;
   transform: skewY(-7deg);
-  margin-top: -12rem; }
+  margin-top: -14rem; }
   .section-features > * {
     transform: skewY(7deg); }
 
 .section-tours {
   background-color: #F7F7F7;
-  padding: 25rem 0 50rem 0;
-  margin-top: -12rem; }
+  padding: 20rem 0;
+  margin-top: -15rem; }
 
 .section-stories {
+  position: relative;
+  padding: 15rem 0; }
+
+.section-book {
   padding: 15rem 0;
-  background-color: #F7F7F7; }
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(https://res.cloudinary.com/dzgncebhe/image/upload/v1585606234/Natours/nat-10_wvaa1u.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
