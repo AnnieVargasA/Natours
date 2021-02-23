@@ -28,3 +28,13 @@
     $color-primary-dark
   );
 }
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  
+}

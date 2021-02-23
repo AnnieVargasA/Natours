@@ -22,9 +22,8 @@
   </head>
 
   <body>
-
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
@@ -199,7 +198,7 @@
       </section>
 
       <!--Tours Section-->
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -231,7 +230,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -261,7 +260,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -293,14 +292,14 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--green">Discover all tours</a>
+          <a href="#section-tours" class="btn btn--green">Discover all tours</a>
         </div>
       </section>
 
@@ -492,6 +491,47 @@
         </div>
       </div>
     </footer>
+
+    <!--Tours Section's Popup-->
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="https://res.cloudinary.com/dzgncebhe/image/upload/v1585606222/Natours/nat-8_rjozxk.jpg"
+            alt="Tour photo 1"
+            class="popup__img"
+          />
+          <img
+            src="https://res.cloudinary.com/dzgncebhe/image/upload/v1585606238/Natours/nat-9_nl75qm.jpg"
+            alt="Tour photo 2"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now!
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Importan &ndash; Please read these therms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit
+            aliquet sagittis id consectetur purus ut faucibus. Laoreet sit amet
+            cursus sit amet dictum sit. Id neque aliquam vestibulum morbi
+            blandit cursus. Tincidunt vitae semper quis lectus nulla at
+            volutpat. Nibh ipsum consequat nisl vel pretium lectus quam id leo.
+            Scelerisque fermentum dui faucibus in ornare quam viverra. Orci
+            dapibus ultrices in iaculis nunc sed augue. Id aliquet risus feugiat
+            in ante metus dictum. In est ante in nibh mauris. Sit amet commodo
+            nulla facilisi nullam vehicula ipsum a. Ullamcorper morbi tincidunt
+            ornare massa.
+          </p>
+          <a href="#" class="btn btn--green"> Book now </a>
+        </div>
+      </div>
+    </div>
 
     <!--
       ==="Building a Custom Grid with Floats lesson 34"===
